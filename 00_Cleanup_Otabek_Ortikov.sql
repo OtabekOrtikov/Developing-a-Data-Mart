@@ -1,3 +1,10 @@
+/*
+================================================================================
+ Purpose: Safely drops all data mart tables to allow for a clean re-run.
+ Use 'CASCADE' to handle dependencies automatically.
+================================================================================
+*/
+
 -- Drop Fact Tables (depend on Dims)
 DROP TABLE IF EXISTS FactSales CASCADE;
 DROP TABLE IF EXISTS FactCustomerSales CASCADE;
